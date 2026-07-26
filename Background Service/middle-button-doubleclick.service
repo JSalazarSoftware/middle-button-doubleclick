@@ -1,0 +1,12 @@
+[Unit]
+Description=Mouse Middle Click to Double Click Daemon
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/middle-button-doubleclick
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
